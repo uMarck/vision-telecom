@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&family=Oswald&family=Poppins:wght@200;300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../IMG/PROVEDOR-AZUL.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+header .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+}
+header .header .logo img {
+  cursor: pointer;
+}
+header .header .menu a {
+  text-decoration: none;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  color: white;
+  font-size: 12px;
+  margin: 2px 10px 2px 10px;
+}
+header .header #btn {
+  padding: 10px;
+  margin: 5px;
+  background-color: #8c5c03;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+header .header #btn:hover {
+  background-color: #926106;
+}
+
+span {
+  color: orange;
+  text-transform: uppercase;
+}
+
+#pri {
+  position: relative;
+  top: -355px;
+  left: 5px;
+  font-size: 25px;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  color: white;
+  text-align: center;
+  height: 0px;
+  width: 100%;
+}
+
+#plano {
+  position: relative;
+  top: -200px;
+  left: 0px;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  text-align: center;
+  background-color: #8c5c03;
+  width: 305px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 25px 15px 25px 15px;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#plano h3 a {
+  text-decoration: none;
+  color: white;
+}
+#plano:hover {
+  transform: translateY(-5px);
+  background-color: #a5814d;
+}
+
+.container {
+  height: 100vh;
+  background-color: #242424;
+  margin-top: -80px;
+}
+.container #empresa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding-top: 35px;
+}
+.container #empresa #imagem img {
+  width: 550px;
+  border-radius: 100%;
+}
+.container #empresa #texto {
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  width: 500px;
+  margin-left: -155px;
+  text-align: left;
+  color: white;
+}
+.container #empresa #texto h1 {
+  color: orange;
+}
+
+.container-2 {
+  height: 100vh;
+  margin: auto;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #191919;
+}
+.container-2 #servicos {
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  text-align: center;
+  padding: 50px;
+}
+.container-2 #servicos h1 {
+  font-size: 55px;
+  color: orange;
+}
+.container-2 #servicos h3 {
+  width: 450px;
+  margin: auto;
+  padding: 15px;
+}
+.container-2 .sub-servicos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+}
+.container-2 .sub-servicos .mais {
+  width: 350px;
+  text-align: center;
+  padding: 25px 0px 0px 0px;
+}
+.container-2 .sub-servicos .mais h2 {
+  color: rgb(14, 101, 159);
+}
+.container-2 .sub-servicos .mais h3 {
+  font-size: 17.5px;
+}
+
+.container-3 {
+  background-color: #202020;
+  height: 100vh;
+}
+.container-3 #text {
+  text-align: center;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  padding-top: 20px;
+}
+.container-3 #text h1 {
+  color: orange;
+  font-size: 55px;
+}
+.container-3 #text h3 {
+  color: white;
+  font-size: 15px;
+}
+.container-3 #cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-3 #cards #card {
+  border-radius: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #242424;
+  color: white;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  width: 350px;
+  margin-top: 25px;
+  border-bottom: 5px solid rgb(5, 8, 239);
+}
+.container-3 #cards #card h1 {
+  background-color: blue;
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+  padding: 20px 55px 20px 55px;
+}
+.container-3 #cards #card ul {
+  padding-left: 25px;
+}
+.container-3 #cards #card .list ul li {
+  list-style: none;
+  padding: 15px 0px 15px 0px;
+}
+.container-3 #cards #card .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container-3 #cards #card .item img {
+  margin-right: 8px;
+}
+.container-3 #cards #card .link {
+  background-color: orange;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+  width: 150px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  margin-left: 95px;
+}
+.container-3 #cards #card .link a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.container-4 {
+  background-color: #202020;
+}
+.container-4 #text {
+  text-align: center;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  padding-top: 20px;
+}
+.container-4 #text h1 {
+  color: orange;
+  font-size: 55px;
+}
+.container-4 #text h3 {
+  color: white;
+  font-size: 15px;
+}
+.container-4 #cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container-4 #cards #card {
+  border-radius: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #242424;
+  color: white;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  width: 350px;
+  margin-top: 25px;
+  border-bottom: 5px solid rgb(173, 127, 0);
+}
+.container-4 #cards #card h1 {
+  background-color: rgb(164, 103, 28);
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+  padding: 20px 55px 20px 55px;
+}
+.container-4 #cards #card ul {
+  padding-left: 25px;
+}
+.container-4 #cards #card .list ul li {
+  list-style: none;
+  padding: 15px 0px 15px 0px;
+}
+.container-4 #cards #card .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container-4 #cards #card .item img {
+  margin-right: 8px;
+}
+.container-4 #cards #card .link {
+  background-color: orange;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+  width: 150px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  margin-left: 95px;
+}
+.container-4 #cards #card .link a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+#infos {
+  background-color: #110645;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+#infos #client {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  color: white;
+}
+#infos #client #info-client {
+  padding: 5px;
+  margin: 5px;
+}
+
+#area-cobertura {
+  height: 100vh;
+  background-color: #191919;
+  background-image: url(../IMG/fundo.png);
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 15px;
+}
+#area-cobertura details {
+  background-color: #8c5c03;
+  color: white;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  width: 500px;
+  padding: 15px;
+  position: relative;
+  margin: 35px 5px 45px 5px;
+  left: 405px;
+  border-radius: 10px;
+}
+#area-cobertura details p {
+  padding: 2px;
+  margin: 15px;
+}
+#area-cobertura #cobertura-header h1 {
+  color: orange;
+  padding: 10px;
+  text-align: center;
+}
+#area-cobertura #cobertura-header p {
+  color: rgb(0, 119, 255);
+  padding: 5px;
+  text-align: center;
+}
+#area-cobertura #aviso {
+  color: rgb(157, 84, 84);
+  width: 350px;
+  position: fixed;
+  top: 495px;
+  text-align: center;
+  left: 495px;
+}/*# sourceMappingURL=index.css.map */
