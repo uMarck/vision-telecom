@@ -381,8 +381,8 @@ span {
     #aviso {
         color: rgb(157, 84, 84);
         width: 350px;
-        position: fixed;
-        top: 495px;
+        position: relative;
+        top: -15px;
         text-align: center;
         left: 495px;
     }
