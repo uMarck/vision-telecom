@@ -270,7 +270,7 @@ span {
   padding: 20px 55px 20px 55px;
 }
 .container-4 #cards #card ul {
-  padding-left: 25px;
+  padding: 1rem;
 }
 .container-4 #cards #card .list ul li {
   list-style: none;
@@ -361,4 +361,256 @@ span {
   top: -15px;
   text-align: center;
   left: 495px;
+}
+
+.contato {
+  color: white;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  background-image: url(../IMG/ANTENDENTE.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.contato #campos {
+  margin-left: 750px;
+}
+.contato h1 {
+  text-align: center;
+  padding: 20px;
+}
+.contato form {
+  max-width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0b2551;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contato label {
+  display: block;
+  margin-bottom: 10px;
+}
+.contato input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 0px;
+  border: none;
+  background-color: #526e9a;
+  color: #ffffff;
+}
+.contato ::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.contato ::placeholder {
+  color: rgb(255, 255, 255);
+}
+.contato button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #2D3748;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contato .img {
+  margin-top: 55px;
+  margin-left: 55px;
+}
+
+footer {
+  margin: auto;
+  height: 100vh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: white;
+  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMG/rm373batch2-04.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+footer a {
+  text-align: none;
+  color: white;
+  text-decoration: none;
+}
+footer article {
+  margin: 3.5rem;
+}
+footer article ul {
+  list-style: none;
+}
+footer article ul li {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+footer article ul a {
+  color: white;
+  text-decoration: none;
+}
+footer article ul a:hover {
+  color: orange;
+}
+footer article img {
+  padding-top: 1rem;
+  margin-right: 5px;
+  filter: grayscale(2);
+  transition: 0.5s ease-in-out;
+}
+footer article img:hover {
+  filter: grayscale(0);
+}
+footer article p {
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer article #info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+footer article #info p {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+footer article #info img {
+  filter: invert(1);
+}
+
+@media screen and (max-width: 414px) {
+  .header .menu {
+    display: none;
+  }
+  #pri {
+    position: relative;
+    top: -455px;
+  }
+  #pri h1 {
+    font-size: 35px;
+    padding-bottom: 15px;
+  }
+  #pri h3 {
+    font-size: 25px;
+    width: 400px;
+    margin: auto;
+  }
+  .container #empresa #imagem {
+    display: none;
+  }
+  .container #empresa #texto {
+    margin: auto;
+    text-align: center;
+    width: 350px;
+    padding-top: 155px;
+  }
+  .container-2 #servicos {
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+  .container-2 #servicos h1, .container-2 #servicos h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .container-2 #servicos h3 {
+    width: 350px;
+  }
+  .container-2 .sub-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-2 .sub-servicos .mais h2 {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  .container-2 .sub-servicos .mais h3 {
+    font-size: 14.5px;
+  }
+  .container-3 {
+    height: 1550px;
+  }
+  .container-3 #text {
+    margin: auto;
+    padding: 0;
+    width: 400px;
+    text-align: center;
+  }
+  .container-3 #text h3 {
+    width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .container-3 #cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .container-4 #cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #infos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #infos #client {
+    position: relative;
+    left: 85px;
+  }
+  #area-cobertura {
+    margin: auto;
+  }
+  #area-cobertura details {
+    position: relative;
+    left: 13.5px;
+    width: 350px;
+    top: 50px;
+  }
+  #area-cobertura #aviso {
+    position: relative;
+    left: 13.5px;
+    width: 350px;
+    top: 150px;
+    text-shadow: 1px 1px 15px black;
+  }
+  .contato #campos {
+    margin: auto;
+    padding-top: 100px;
+  }
+  .contato #campos form {
+    width: 355px;
+  }
+  .contato #campos form .img {
+    margin-top: 55px;
+    margin-left: 35px;
+  }
+  footer {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
