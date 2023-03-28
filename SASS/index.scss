@@ -537,6 +537,7 @@ footer {
     #pri {
         position: relative;
         top: -455px;
+        left: -2px;
         h1 {
             font-size: 35px;
             padding-bottom: 15px;
@@ -564,6 +565,7 @@ footer {
     }
 
     .container-2 {
+        height: 855px;
         #servicos {
             margin: auto;
             width: 350px;
@@ -672,5 +674,50 @@ footer {
 
     footer {
         display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #pri {
+        position: absolute;
+        top: 250px;
+        left: -6px;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            position: relative;
+            left: 9px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    #cobertura-header {
+        position: relative;
+        left: -2px;
+        top: 50px;
+    }
+
+    #area-cobertura {
+        details {
+            margin: 0;
+            padding: 5px;
+            position: relative;
+            left: 4.5px;
+            top: 95px;
+            summary {
+                padding-top: 5px;
+                padding-left: 5px;
+            }
+        }
+
+        #aviso {
+            position: relative;
+            left: 4.5px;
+            top: 205px;
+        }
     }
 }

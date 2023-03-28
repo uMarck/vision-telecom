@@ -504,6 +504,7 @@ footer article #info img {
   #pri {
     position: relative;
     top: -455px;
+    left: -2px;
   }
   #pri h1 {
     font-size: 35px;
@@ -522,6 +523,9 @@ footer article #info img {
     text-align: center;
     width: 350px;
     padding-top: 155px;
+  }
+  .container-2 {
+    height: 855px;
   }
   .container-2 #servicos {
     margin: auto;
@@ -612,5 +616,42 @@ footer article #info img {
   }
   footer {
     display: none;
+  }
+}
+@media screen and (max-width: 390px) {
+  #pri {
+    position: absolute;
+    top: 250px;
+    left: -6px;
+    margin: auto;
+    text-align: center;
+  }
+  #pri h1 {
+    position: relative;
+    left: 9px;
+  }
+  #pri h3 {
+    font-size: 15px;
+  }
+  #cobertura-header {
+    position: relative;
+    left: -2px;
+    top: 50px;
+  }
+  #area-cobertura details {
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    left: 4.5px;
+    top: 95px;
+  }
+  #area-cobertura details summary {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  #area-cobertura #aviso {
+    position: relative;
+    left: 4.5px;
+    top: 205px;
   }
 }/*# sourceMappingURL=index.css.map */

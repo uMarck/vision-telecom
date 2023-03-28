@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vision Telecom</title>
     <link rel="stylesheet" href="./SASS/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./IMG/internet.png" type="image/x-icon">
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <a href="#servicos">SERVIÇOS</a>
                 <a href="#pl">PLANOS</a>
                 <a href="#area-cobertura">COBERTURA</a>
-                <a href="">ATENDIMENTO</a>
+                <a href="#campos">ATENDIMENTO</a>
                 <a href="" id="btn">ÁREA DO CLIENTE</a>
             </div>
         </div>
@@ -31,6 +32,7 @@
         <h1>Você também vai comemorar</h1>
         <h3>Não perca tempo e <span>ASSINE JÁ</span> o seu plano e navegue mais rápido!</h3>
     </div>
+    
     <div id="plano">
         <h3><a href="#pl">ESCOLHER PLANO</a></h3>
     </div>
@@ -98,7 +100,7 @@
             para sua casa ou para sua empresa.</h3>
         </div>
         <div id="cards">
-            <div id="card">
+            <div id="card" data-aos="fade-up">
                 <div><h1>7<br>Mega</h1></div>
                 <div class="list">
                     <ul>
@@ -113,7 +115,7 @@
                     <a href="">ASSINE JÁ !</a>
                 </div>
             </div>
-            <div id="card">
+            <div id="card" data-aos="fade-up">
                 <div><h1>10<br>Mega</h1></div>
                 <div class="list">
                     <ul>
@@ -128,7 +130,7 @@
                     <a href="">ASSINE JÁ !</a>
                 </div>
             </div>
-            <div id="card">
+            <div id="card" data-aos="fade-up">
                 <div><h1>15<br>Mega</h1></div>
                 <div class="list">
                     <ul>
@@ -152,7 +154,7 @@
             <h3>Internet fibra óptica ideal para sua empresa.
             Atendemos também área residencial.</h3>
         </div>
-        <div id="cards">
+        <div id="cards" data-aos="fade-down">
             <div id="card">
                 <div><h1>10<br>Mega</h1></div>
                 <div class="list">
@@ -198,8 +200,9 @@
                     <a href="">ASSINE JÁ !</a>
                 </div>
             </div>
-        </div><div id="cards">
-            <div id="card" style="margin-bottom: 25px;">
+        </div>
+            <div id="cards">
+            <div id="card" data-aos="fade-down" style="margin-bottom: 25px;">
                 <div><h1>50<br>Mega</h1></div>
                 <div class="list">
                     <ul>
@@ -214,7 +217,7 @@
                     <a href="">ASSINE JÁ !</a>
                 </div>
             </div>
-            <div id="card" style="margin-bottom: 25px;">
+            <div id="card" data-aos="fade-down" style="margin-bottom: 25px;">
                 <div><h1>100<br>Mega</h1></div>
                 <div class="list">
                     <ul>
@@ -324,23 +327,23 @@
         <article>
             <h1>Acesso Rápido</h1>
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Empresa</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Planos</a></li>
-                <li><a href="">Cobertura</a></li>
-                <li><a href="">Atendimento</a></li>
+                <li><a href="#pri">Início</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#pl">Planos</a></li>
+                <li><a href="#area-cobertura">Cobertura</a></li>
+                <li><a href="#campos">Atendimento</a></li>
             </ul>
         </article>
         <article>
             <h1>Canais de atendimento</h1>
             <div id="info">
                 <img src="./IMG/whatsapp.png" width="25px" alt="">
-                <p>+55 92 9 9994-9576</p>
+                <p>+55 92 9 9994-XXXX</p>
             </div>
             <div id="info">
                 <img src="./IMG/telefone.png" width="25px" alt="">
-                <p>0800 090 3433</p>
+                <p>0800 090 XXXX</p>
             </div>
             <div id="info">
                 <img src="./IMG/email.png" width="25px" alt="">
@@ -351,5 +354,9 @@
             <p>Desenvolvido por <a href="https://www.instagram.com/eomarckk_/" target="_blank">Ryan Marck</a></p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
