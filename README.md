@@ -25,4 +25,5 @@ Comecei este projeto em um live, estava em um tédio supremo jogando, abri o VSC
 Nenhuma interação com javascript foi colocada na página, é apenas um site para ir para o portfólio, então não vejo necessidade nisto.
 
 # TELAS MENORES
-Assim como no site original, este site ainda não está nem 1% adaptado para telas menores, ainda está em processo de criação, e me breve, ganhará uma versão mobile.
+Adaptado para 5 telas: 414px, 390px, 375px e 320px!
+Segue sendo adaptado para telas maiores e menores.
