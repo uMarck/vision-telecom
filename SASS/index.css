@@ -68,7 +68,7 @@ span {
   left: 0px;
   font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
   text-align: center;
-  background-color: #8c5c03;
+  background-color: #c18922;
   width: 305px;
   border-radius: 50px;
   font-weight: 600;
@@ -85,7 +85,7 @@ span {
 }
 #plano:hover {
   transform: translateY(-5px);
-  background-color: #a5814d;
+  background-color: #fcb655;
 }
 
 .container {
@@ -141,21 +141,27 @@ span {
 }
 .container-2 .sub-servicos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
   align-items: center;
   font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
 }
 .container-2 .sub-servicos .mais {
-  width: 350px;
+  max-width: 355px;
   text-align: center;
   padding: 25px 0px 0px 0px;
 }
+.container-2 .sub-servicos .mais img {
+  margin-bottom: 15px;
+}
 .container-2 .sub-servicos .mais h2 {
   color: rgb(14, 101, 159);
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 .container-2 .sub-servicos .mais h3 {
-  font-size: 17.5px;
+  font-size: 0.9rem;
 }
 
 .container-3 {
@@ -328,21 +334,12 @@ span {
      -moz-user-select: none;
           user-select: none;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#area-cobertura details {
-  background-color: #8c5c03;
-  color: white;
-  font-family: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
-  width: 500px;
-  padding: 15px;
-  position: relative;
-  margin: 35px 5px 45px 5px;
-  left: 405px;
-  border-radius: 10px;
-}
-#area-cobertura details p {
-  padding: 2px;
-  margin: 15px;
+#area-cobertura #map {
+  margin: 1rem;
 }
 #area-cobertura #cobertura-header h1 {
   color: orange;
@@ -503,7 +500,7 @@ footer article #info img {
   }
   #pri {
     position: relative;
-    top: -455px;
+    top: -555px;
     left: -2px;
   }
   #pri h1 {
@@ -515,6 +512,11 @@ footer article #info img {
     width: 400px;
     margin: auto;
   }
+  #plano {
+    position: relative;
+    left: 0.5px;
+    top: -305px;
+  }
   .container #empresa #imagem {
     display: none;
   }
@@ -525,7 +527,7 @@ footer article #info img {
     padding-top: 155px;
   }
   .container-2 {
-    height: 855px;
+    height: 895px;
   }
   .container-2 #servicos {
     margin: auto;
@@ -589,19 +591,15 @@ footer article #info img {
   }
   #area-cobertura {
     margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  #area-cobertura details {
-    position: relative;
-    left: 13.5px;
+  #area-cobertura #map {
+    margin: auto;
+    display: flex;
+    justify-content: center;
     width: 350px;
-    top: 50px;
-  }
-  #area-cobertura #aviso {
-    position: relative;
-    left: 13.5px;
-    width: 350px;
-    top: 150px;
-    text-shadow: 1px 1px 15px black;
   }
   .contato #campos {
     margin: auto;
@@ -653,5 +651,178 @@ footer article #info img {
     position: relative;
     left: 4.5px;
     top: 205px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #pri {
+    position: absolute;
+    left: -12px;
+  }
+  .container-3 {
+    margin: auto;
+  }
+  .container-3 #text {
+    margin: auto;
+    position: relative;
+    left: -12px;
+    padding-top: 1rem;
+  }
+  .container-3 #text h1 {
+    font-size: 40px;
+  }
+  .container-3 #cards {
+    position: absolute;
+    left: 12px;
+  }
+  .container-4 #text h1 {
+    font-size: 50px;
+  }
+  #infos #client {
+    position: relative;
+    left: 65px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    overflow: hidden;
+  }
+  #pri {
+    position: relative;
+    top: -355px;
+    left: 2px;
+    width: 300px;
+    margin: auto;
+  }
+  #pri h1 {
+    font-size: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    left: -3px;
+  }
+  #pri h3 {
+    font-size: 15px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  #plano {
+    position: relative;
+    top: -155px;
+    width: 200px;
+    font-size: 15px;
+  }
+  #emp #empresa #imagem {
+    display: none;
+  }
+  #emp #empresa #texto {
+    max-width: 300px;
+    font-size: 15px;
+    margin-top: -125px;
+  }
+  .container-2 {
+    height: 935px;
+  }
+  .container-2 #servicos {
+    max-width: 300px;
+  }
+  .container-2 #servicos h1 {
+    font-size: 35px;
+    padding-bottom: 15px;
+  }
+  .container-2 #servicos h3 {
+    font-size: 15px;
+    width: 300px;
+  }
+  .container-2 .mais h3 {
+    max-width: 290px;
+    margin: auto;
+  }
+  .container-3 #text {
+    position: relative;
+    left: -42px;
+  }
+  .container-3 #text h1 {
+    font-size: 25px;
+  }
+  .container-3 #text h3 {
+    max-width: 300px;
+    font-size: 15px;
+  }
+  .container-3 #cards {
+    max-width: 300px;
+  }
+  .container-3 #cards #card {
+    width: 295px;
+  }
+  .container-3 #cards #card #link {
+    margin: 5px 5px 15px 65px;
+  }
+  .container-4 #text {
+    max-width: 300px;
+    margin: auto;
+  }
+  .container-4 #text h1 {
+    font-size: 25px;
+  }
+  .container-4 #text h3 {
+    font-size: 15px;
+  }
+  .container-4 #cards {
+    max-width: 290px;
+    margin: auto;
+  }
+  .container-4 #cards #card {
+    max-width: 290px;
+  }
+  .container-4 #cards #card #link {
+    margin: 5px 5px 15px 65px;
+  }
+  #infos #client {
+    position: relative;
+    left: 33px;
+  }
+  #area-cobertura {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #area-cobertura #cobertura-header {
+    padding: 0;
+    margin: 0;
+    max-width: 315px;
+  }
+  #area-cobertura #cobertura-header h1 {
+    font-size: 25px;
+  }
+  #area-cobertura #cobertura-header p {
+    padding-bottom: 15px;
+  }
+  #area-cobertura #map {
+    max-width: 300px;
+    position: relative;
+    top: 55px;
+    left: -5.5px;
+  }
+  .contato {
+    height: 800px;
+  }
+  .contato #campos {
+    padding-top: 255px;
+  }
+  .contato #campos h1 {
+    font-size: 25px;
+  }
+  .contato #campos form {
+    max-width: 300px;
+    height: 455px;
+  }
+  .contato #campos form .img {
+    position: relative;
+    left: -29px;
+    top: -25px;
   }
 }/*# sourceMappingURL=index.css.map */

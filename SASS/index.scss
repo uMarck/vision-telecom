@@ -78,7 +78,7 @@ span {
         left: -0px;
         font-family: $font;
         text-align: center;
-        background-color: #8c5c03;
+        background-color: #c18922;
         width: 305px;
         border-radius: 50px;
         font-weight: 600;
@@ -96,7 +96,7 @@ span {
         }
         &:hover {
             transform: translateY(-5px);
-            background-color: #a5814d;
+            background-color: #fcb655;
         }
 }
 
@@ -153,20 +153,26 @@ span {
 
     .sub-servicos {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
         align-items: center;
         font-family: $font;
 
         .mais {
-            width: 350px;
+            max-width: 355px;
             text-align: center;
             padding: 25px 0px 0px 0px;
+            img {
+                margin-bottom: 15px;
+            }
             h2 {
                 color: rgb(14, 101, 159);
+                font-size: 1rem;
+                margin-bottom: 5px;
             }
             h3 {
-                font-size: 17.5px;
+                font-size: 0.9rem;
             }
         }
     }
@@ -348,21 +354,11 @@ span {
     font-family: $font;
     user-select: none;
     padding: 15px;
-    details {
-        background-color: #8c5c03;
-        color: white;
-        font-family: $font;
-        width: 500px;
-        padding: 15px;
-        position: relative;
-        margin: 35px 5px 45px 5px;
-        left: 405px;
-        border-radius: 10px;
-
-        p {
-            padding: 2px;
-            margin: 15px;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #map {
+        margin: 1rem;
     }
 
     #cobertura-header {
@@ -405,13 +401,13 @@ span {
         padding: 20px;
     }
     form {
-      max-width: 400px;
-      height: 500px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #0b2551;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0b2551;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     label {
@@ -536,7 +532,7 @@ footer {
 
     #pri {
         position: relative;
-        top: -455px;
+        top: -555px;
         left: -2px;
         h1 {
             font-size: 35px;
@@ -547,6 +543,12 @@ footer {
             width: 400px;
             margin: auto;
         }
+    }
+
+    #plano {
+        position: relative;
+        left: 0.5px;
+        top: -305px;
     }
 
     .container {
@@ -565,7 +567,7 @@ footer {
     }
 
     .container-2 {
-        height: 855px;
+        height: 895px;
         #servicos {
             margin: auto;
             width: 350px;
@@ -642,19 +644,14 @@ footer {
 
     #area-cobertura {
         margin: auto;
-        details {
-            position: relative;
-            left: 13.5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        #map {
+            margin: auto;
+            display: flex;
+            justify-content: center;
             width: 350px;
-            top: 50px;
-        }
-
-        #aviso {
-            position: relative;
-            left: 13.5px;
-            width: 350px;
-            top: 150px;
-            text-shadow: 1px 1px 15px black;
         }
     }
 
@@ -718,6 +715,218 @@ footer {
             position: relative;
             left: 4.5px;
             top: 205px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #pri {
+        position: absolute;
+        left: -12px;
+    }
+
+    .container-3 {
+        margin: auto;
+        #text {
+            margin: auto;
+            position: relative;
+            left: -12px;
+            padding-top: 1rem;
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        #cards {
+            position: absolute;
+            left:12px;
+        }
+    }
+
+    .container-4 {
+        #text {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    #infos {
+        #client {
+            position: relative;
+            left: 65px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        overflow: hidden;
+    }
+    #pri {
+        position: relative;
+        top: -355px;
+        left: 2px;
+        width: 300px;
+        margin: auto;
+        h1 {
+            font-size:15px;
+            padding-bottom: 5px;
+            text-align: center;
+            position: relative;
+            left: -3px;
+        }
+
+        h3 {
+            font-size: 15px;
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    #plano {
+        position: relative;
+        top: -155px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #emp {
+        #empresa {
+            #imagem {
+                display: none;
+            }
+            #texto {
+                max-width: 300px;
+                font-size: 15px;
+                margin-top: -125px;
+            }
+        }
+    }
+
+    .container-2 {
+        height: 935px;
+        #servicos {
+            max-width: 300px;
+            h1 {
+                font-size: 35px;
+                padding-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 15px;
+                width: 300px;
+            }
+        }
+
+        .mais {
+            h3 {
+                max-width: 290px;
+                margin: auto;
+            }
+        }
+    }
+
+    .container-3 {
+        #text {
+            position: relative;
+            left: -42px;
+            h1 {
+                font-size: 25px;
+            }
+            h3 {
+                max-width: 300px;
+                font-size: 15px;
+            }
+        }
+
+        #cards {
+            max-width: 300px;
+            #card {
+                width: 295px;
+                #link {
+                    margin: 5px 5px 15px 65px;
+                }
+            }
+        }
+    }
+
+    .container-4 {
+        #text {
+            max-width: 300px;
+            margin: auto;
+            h1 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 15px;
+            }
+        }
+
+        #cards {
+            max-width: 290px;
+            margin: auto;
+            #card {
+                max-width: 290px;
+
+                #link {
+                    margin: 5px 5px 15px 65px
+                }
+            }
+        }
+    }
+
+    #infos {
+        #client {
+            position: relative;
+            left: 33px;
+        }
+    }
+
+    #area-cobertura {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        #cobertura-header {
+            padding: 0;
+            margin: 0;
+            max-width: 315px;
+            h1 {
+                font-size: 25px;
+            }
+
+            p {
+                padding-bottom: 15px;
+            }
+        }
+        #map {
+            max-width: 300px;
+            position: relative;
+            top: 55px;
+            left: -5.5px;
+        }
+    }
+
+    .contato {
+        height: 800px;
+        #campos {
+            padding-top: 255px;
+            h1 {
+                font-size: 25px;
+            }
+            form {
+                max-width: 300px;
+                height: 455px;
+                .img {
+                    position: relative;
+                    left: -29px;
+                    top: -25px;
+                }
+            }
         }
     }
 }
