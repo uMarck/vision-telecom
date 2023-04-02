@@ -514,7 +514,7 @@ footer article #info img {
   }
   #plano {
     position: relative;
-    left: 0.5px;
+    left: 1px;
     top: -305px;
   }
   .container #empresa #imagem {
@@ -588,6 +588,7 @@ footer article #info img {
   #infos #client {
     position: relative;
     left: 85px;
+    max-width: 250px;
   }
   #area-cobertura {
     margin: auto;
@@ -656,7 +657,19 @@ footer article #info img {
 @media screen and (max-width: 375px) {
   #pri {
     position: absolute;
-    left: -12px;
+    left: 5px;
+    max-width: 350px;
+  }
+  #pri h3 {
+    max-width: 315px;
+  }
+  #plano {
+    position: relative;
+    top: -195px;
+    left: -2px;
+  }
+  .container #empresa #texto {
+    margin-top: -55px;
   }
   .container-3 {
     margin: auto;
@@ -664,15 +677,19 @@ footer article #info img {
   .container-3 #text {
     margin: auto;
     position: relative;
-    left: -12px;
+    left: -2px;
     padding-top: 1rem;
+    max-width: 350px;
   }
   .container-3 #text h1 {
     font-size: 40px;
   }
   .container-3 #cards {
     position: absolute;
-    left: 12px;
+    left: 13px;
+  }
+  .container-3 #cards #card {
+    max-width: 350px;
   }
   .container-4 #text h1 {
     font-size: 50px;
@@ -680,6 +697,18 @@ footer article #info img {
   #infos #client {
     position: relative;
     left: 65px;
+  }
+  #area-cobertura #map {
+    position: relative;
+    left: -4.5px;
+    max-width: 365px;
+    top: 35px;
+  }
+  .contato {
+    height: 750px;
+  }
+  .contato #campos {
+    margin-top: -85px;
   }
 }
 @media screen and (max-width: 320px) {
