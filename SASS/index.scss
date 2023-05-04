@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&family=Oswald&family=Poppins:wght@200;300;400&display=swap');
-
+$font: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
 * {
     padding: 0;
     margin: 0;
@@ -11,8 +11,6 @@
 body {
     overflow-x: hidden;
 }
-
-$font: "Montserrat", "Oswald", "Poppins", "Helvetica", Verdana, Arial;
 
 header {
     height: 100vh;
@@ -519,6 +517,95 @@ footer {
             img {
                 filter: invert(1);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    #pri {
+        position: relative;
+        top: -555px;
+        filter: drop-shadow(1px 2px 15px black);
+    }
+
+    #plano {
+        position: relative;
+        top: -425px;
+    }
+
+    .container {
+        #empresa {
+            #imagem {
+                padding-top: 7rem;
+            }
+
+            #texto {
+                h1 {
+                    padding-bottom: 1.5rem;
+                }
+                width: 800px;
+                padding-top: 7rem;
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .container-2 {
+        #servicos {
+            padding-top: 9.5rem;
+        }
+
+        .sub-servicos {
+            padding-top: 4rem;
+            .mais {
+                width: 955px;
+                h2 {
+                    font-size: 25px;
+                    padding-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .container-3 {
+        #text {
+            padding-top: 4.5rem;
+        }
+
+        #cards {
+            padding-top: 4.5rem;
+        }
+    }
+
+    #area-cobertura {
+        #cobertura-header {
+            padding-top: 5rem;
+        }
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contato {
+        #campos {
+            position: relative;
+            left: 155px;
+            top: 55px;
+            form {
+                height: 700px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        article {
+            width: 450px;
         }
     }
 }
