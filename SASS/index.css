@@ -494,6 +494,74 @@ footer article #info img {
   filter: invert(1);
 }
 
+@media screen and (max-width: 1920px) {
+  #pri {
+    position: relative;
+    top: -555px;
+    filter: drop-shadow(1px 2px 15px black);
+  }
+  #plano {
+    position: relative;
+    top: -425px;
+  }
+  .container #empresa #imagem {
+    padding-top: 7rem;
+  }
+  .container #empresa #texto {
+    width: 800px;
+    padding-top: 7rem;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .container #empresa #texto h1 {
+    padding-bottom: 1.5rem;
+  }
+  .container-2 #servicos {
+    padding-top: 9.5rem;
+  }
+  .container-2 .sub-servicos {
+    padding-top: 4rem;
+  }
+  .container-2 .sub-servicos .mais {
+    width: 955px;
+  }
+  .container-2 .sub-servicos .mais h2 {
+    font-size: 25px;
+    padding-bottom: 1.2rem;
+  }
+  .container-3 #text {
+    padding-top: 4.5rem;
+  }
+  .container-3 #cards {
+    padding-top: 4.5rem;
+  }
+  #area-cobertura {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  #area-cobertura #cobertura-header {
+    padding-top: 5rem;
+  }
+  .contato #campos {
+    position: relative;
+    left: 155px;
+    top: 55px;
+  }
+  .contato #campos form {
+    height: 700px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer article {
+    width: 450px;
+  }
+}
 @media screen and (max-width: 414px) {
   .header .menu {
     display: none;
