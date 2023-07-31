@@ -611,7 +611,6 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-
     .header {
         .menu {
             display: none;
@@ -646,16 +645,24 @@ footer {
             }
     
             #texto {
+                height: auto;
+                padding: 0;
                 margin: auto;
                 text-align: center;
                 width: 350px;
-                padding-top: 155px;
+                h1 {
+                    padding: 0;
+                    margin: 0 0 1rem 0;
+                }
+                h3 {
+                    font-size: 20px;
+                }
             }
         }
     }
 
     .container-2 {
-        height: 895px;
+        height: auto;
         #servicos {
             margin: auto;
             width: 350px;
@@ -675,8 +682,11 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-top: 1rem;
 
             .mais {
+                padding-top: 0;
+                margin: 1rem;
                 h2 {
                     font-size: 15px;
                     padding-bottom: 5px;
@@ -685,16 +695,22 @@ footer {
                     font-size: 14.5px;
                 }
             }
+            .mais:nth-child(3) {
+                margin-bottom: 2rem;
+            }
         }
     }
 
     .container-3 {
-        height: 1550px;
+        height: auto;
         #text {
             margin: auto;
             padding: 0;
             width:400px;
             text-align: center;
+            h1 {
+                padding-bottom: 1rem;
+            }
             h3 {
                 width: 350px;
                 margin: auto;
@@ -707,6 +723,11 @@ footer {
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
+            padding-top: 0;
+            margin-top: 0;
+            #card:nth-child(3) {
+                margin-bottom: 1.5rem;
+            }
         }
     }
 
@@ -745,14 +766,27 @@ footer {
     }
 
     .contato {
+        height: auto;
+        width: 414px;
+        margin: auto;
         #campos {
+            h1 {
+                text-align: center;
+                position: relative;
+                left: 25px;
+            }
+            width: 355px;
             margin: auto;
+            position:relative;
+            left: -22px;
+            top: -35px;
             padding-top: 100px;
             form {
-                width: 355px;
+                width: 413px;
+                margin: auto;
                 .img {
-                    margin-top: 55px;
-                    margin-left: 35px;
+                    margin-top: 125px;
+                    margin-left: 55px;
                 }
             }
         }
@@ -764,6 +798,9 @@ footer {
 }
 
 @media screen and (max-width: 390px) {
+    header {
+        height: 100vh;
+    }
     #pri {
         position: absolute;
         top: 250px;
@@ -781,6 +818,12 @@ footer {
         }
     }
 
+    #plano {
+        position: relative;
+        top: -205px;
+        left: 3px;
+    }
+
     #cobertura-header {
         position: relative;
         left: -2px;
@@ -788,6 +831,10 @@ footer {
     }
 
     #area-cobertura {
+        #cobertura-header {
+            margin: 0;
+            padding: 0;
+        }
         details {
             margin: 0;
             padding: 5px;
@@ -804,6 +851,23 @@ footer {
             position: relative;
             left: 4.5px;
             top: 205px;
+        }
+    }
+
+    .contato {
+        height: 100vh;
+        #campos {
+            width: 335px;
+            position: relative;
+            left: -32px;
+            form {
+                width: 375px;
+                height: 555px;
+                img {
+                    margin-top: -35px;
+                    margin-left: -10px;
+                }
+            }
         }
     }
 }
@@ -828,12 +892,13 @@ footer {
     .container {
         #empresa {
             #texto {
-                margin-top: -55px;
+                margin-top: -15px;
             }
         }
     }
 
     .container-3 {
+        height: auto;
         margin: auto;
         #text {
             margin: auto;
@@ -847,8 +912,8 @@ footer {
         }
 
         #cards {
-            position: absolute;
-            left:13px;
+            // position: absolute;
+            // left:13px;
 
             #card {
                 max-width: 350px;
@@ -857,6 +922,7 @@ footer {
     }
 
     .container-4 {
+        height: auto;
         #text {
             h1 {
                 font-size: 50px;
@@ -872,11 +938,21 @@ footer {
     }
 
     #area-cobertura {
+        #cobertura-header {
+            margin-top: -25px;
+            padding: 0;
+            h1 {
+                padding: 0;
+            }
+            p {
+                padding: 0;
+            }
+        }
         #map {
             position: relative;
-            left: -4.5px;
-            max-width: 365px;
-            top: 35px;
+            left: -10.5px;
+            width: 365px;
+            padding-bottom: 2rem;
         }
     }
 
@@ -885,6 +961,17 @@ footer {
 
         #campos {
             margin-top: -85px;
+            width: 335px;
+            position: relative;
+            left: -33.5px;
+            h1 {
+                margin-top: -35px;
+                position: relative;
+                left: 15.5px;
+            }
+            form {
+                width: 365px;
+            }
         }
     }
 }
