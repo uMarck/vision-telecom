@@ -589,13 +589,21 @@ footer article #info img {
     display: none;
   }
   .container #empresa #texto {
+    height: auto;
+    padding: 0;
     margin: auto;
     text-align: center;
     width: 350px;
-    padding-top: 155px;
+  }
+  .container #empresa #texto h1 {
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  .container #empresa #texto h3 {
+    font-size: 20px;
   }
   .container-2 {
-    height: 895px;
+    height: auto;
   }
   .container-2 #servicos {
     margin: auto;
@@ -614,6 +622,11 @@ footer article #info img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
+  }
+  .container-2 .sub-servicos .mais {
+    padding-top: 0;
+    margin: 1rem;
   }
   .container-2 .sub-servicos .mais h2 {
     font-size: 15px;
@@ -622,14 +635,20 @@ footer article #info img {
   .container-2 .sub-servicos .mais h3 {
     font-size: 14.5px;
   }
+  .container-2 .sub-servicos .mais:nth-child(3) {
+    margin-bottom: 2rem;
+  }
   .container-3 {
-    height: 1550px;
+    height: auto;
   }
   .container-3 #text {
     margin: auto;
     padding: 0;
     width: 400px;
     text-align: center;
+  }
+  .container-3 #text h1 {
+    padding-bottom: 1rem;
   }
   .container-3 #text h3 {
     width: 350px;
@@ -641,6 +660,11 @@ footer article #info img {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .container-3 #cards #card:nth-child(3) {
+    margin-bottom: 1.5rem;
   }
   .container-4 #cards {
     display: flex;
@@ -670,22 +694,40 @@ footer article #info img {
     justify-content: center;
     width: 350px;
   }
-  .contato #campos {
+  .contato {
+    height: auto;
+    width: 414px;
     margin: auto;
+  }
+  .contato #campos {
+    width: 355px;
+    margin: auto;
+    position: relative;
+    left: -22px;
+    top: -35px;
     padding-top: 100px;
   }
+  .contato #campos h1 {
+    text-align: center;
+    position: relative;
+    left: 25px;
+  }
   .contato #campos form {
-    width: 355px;
+    width: 413px;
+    margin: auto;
   }
   .contato #campos form .img {
-    margin-top: 55px;
-    margin-left: 35px;
+    margin-top: 125px;
+    margin-left: 55px;
   }
   footer {
     display: none;
   }
 }
 @media screen and (max-width: 390px) {
+  header {
+    height: 100vh;
+  }
   #pri {
     position: absolute;
     top: 250px;
@@ -700,10 +742,19 @@ footer article #info img {
   #pri h3 {
     font-size: 15px;
   }
+  #plano {
+    position: relative;
+    top: -205px;
+    left: 3px;
+  }
   #cobertura-header {
     position: relative;
     left: -2px;
     top: 50px;
+  }
+  #area-cobertura #cobertura-header {
+    margin: 0;
+    padding: 0;
   }
   #area-cobertura details {
     margin: 0;
@@ -721,6 +772,22 @@ footer article #info img {
     left: 4.5px;
     top: 205px;
   }
+  .contato {
+    height: 100vh;
+  }
+  .contato #campos {
+    width: 335px;
+    position: relative;
+    left: -32px;
+  }
+  .contato #campos form {
+    width: 375px;
+    height: 555px;
+  }
+  .contato #campos form img {
+    margin-top: -35px;
+    margin-left: -10px;
+  }
 }
 @media screen and (max-width: 375px) {
   #pri {
@@ -737,9 +804,10 @@ footer article #info img {
     left: -2px;
   }
   .container #empresa #texto {
-    margin-top: -55px;
+    margin-top: -15px;
   }
   .container-3 {
+    height: auto;
     margin: auto;
   }
   .container-3 #text {
@@ -752,12 +820,11 @@ footer article #info img {
   .container-3 #text h1 {
     font-size: 40px;
   }
-  .container-3 #cards {
-    position: absolute;
-    left: 13px;
-  }
   .container-3 #cards #card {
     max-width: 350px;
+  }
+  .container-4 {
+    height: auto;
   }
   .container-4 #text h1 {
     font-size: 50px;
@@ -766,17 +833,38 @@ footer article #info img {
     position: relative;
     left: 65px;
   }
+  #area-cobertura #cobertura-header {
+    margin-top: -25px;
+    padding: 0;
+  }
+  #area-cobertura #cobertura-header h1 {
+    padding: 0;
+  }
+  #area-cobertura #cobertura-header p {
+    padding: 0;
+  }
   #area-cobertura #map {
     position: relative;
-    left: -4.5px;
-    max-width: 365px;
-    top: 35px;
+    left: -10.5px;
+    width: 365px;
+    padding-bottom: 2rem;
   }
   .contato {
     height: 750px;
   }
   .contato #campos {
     margin-top: -85px;
+    width: 335px;
+    position: relative;
+    left: -33.5px;
+  }
+  .contato #campos h1 {
+    margin-top: -35px;
+    position: relative;
+    left: 15.5px;
+  }
+  .contato #campos form {
+    width: 365px;
   }
 }
 @media screen and (max-width: 320px) {
